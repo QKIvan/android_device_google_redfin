@@ -7,7 +7,9 @@
 $(call inherit-product, device/google/redbull/device-derp.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/redfin/overlay-derp
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-derp \
+    $(LOCAL_PATH)/redfin/overlay-derp
 
 # HBM
 PRODUCT_PACKAGES += \
